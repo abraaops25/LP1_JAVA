@@ -1,0 +1,40 @@
+//Concessionário de Moto Ducatti
+public class Moto {
+
+    private String cor;
+    private String marca;
+    private String placa;
+    private int ano;
+    private String modelo;
+
+    //Constructor
+     public Moto(String marca, String Modelo){
+       this.modelo=Modelo;
+        this.marca=marca;
+    }
+    //Metodos de Acesso
+      public void setcor(String c) {
+        cor = c;
+    }
+      public void setmarca(String a) {
+        marca = a;
+    }
+      public void setano(int b) {
+        ano = b;
+    }
+      public void setmodelo(String f) {
+        modelo = f;
+    }
+      public String getplaca() {
+        return placa;
+    }
+    //Ligar a Moto
+      private void Ligar () {
+        System.out.println("Sr Stark a Ducatti esta Ligada");
+    }
+    //Desligar Moto
+      private void Desligar() {
+        System.out.println("A Ducatti foi desligada Sr Stark");
+    }
+
+}
