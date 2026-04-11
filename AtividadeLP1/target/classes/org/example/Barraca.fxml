@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="485.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.feiraController">
+   <children>
+      <Button layoutX="98.0" layoutY="99.0" mnemonicParsing="false" onAction="#BotaoArmazenar" prefHeight="31.0" prefWidth="100.0" text="Armazenar" />
+      <Button layoutX="98.0" layoutY="157.0" mnemonicParsing="false" onAction="#BotaoExpor" prefHeight="31.0" prefWidth="100.0" text="Expor" />
+      <Button layoutX="98.0" layoutY="224.0" mnemonicParsing="false" onAction="#BotaoOrganizar" prefHeight="31.0" prefWidth="100.0" text="Organizar" />
+      <Label layoutX="98.0" layoutY="14.0" text="Barraca">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="276.0" fitWidth="335.0" layoutX="416.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/barraca.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="texto" layoutX="384.0" layoutY="44.0" prefHeight="49.0" prefWidth="296.0" />
+      <Button layoutX="122.0" layoutY="302.0" mnemonicParsing="false" onAction="#BotaoVoltar" text="Voltar" />
+   </children>
+</AnchorPane>
