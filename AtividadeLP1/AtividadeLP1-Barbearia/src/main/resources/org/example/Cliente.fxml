@@ -25,5 +25,6 @@
       </ImageView>
       <Label layoutX="276.0" layoutY="42.0" prefHeight="31.0" prefWidth="291.0" />
       <Button layoutX="82.0" layoutY="236.0" mnemonicParsing="false" onAction="#BotaoLevantar" prefHeight="25.0" prefWidth="76.0" text="Levantar" />
+      <Label fx:id="texto" layoutX="197.0" layoutY="53.0" prefHeight="25.0" prefWidth="423.0" />
    </children>
 </AnchorPane>

@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.BarbeariaController">
+<AnchorPane fx:id="TabelaBarbearia" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.BarbeariaController">
    <children>
-      <Button layoutX="96.0" layoutY="141.0" mnemonicParsing="false" onAction="#BotaoCliente" prefHeight="36.0" prefWidth="92.0" text="Cliente" />
-      <Button layoutX="96.0" layoutY="200.0" mnemonicParsing="false" onAction="#BotaoAssentos" prefHeight="36.0" prefWidth="92.0" text="Assentos" />
-      <Button layoutX="96.0" layoutY="269.0" mnemonicParsing="false" onAction="#BotaoMaquininha" prefHeight="30.0" prefWidth="92.0" text="Maquininhas" />
+      <Button fx:id="BotaoCliente" layoutX="96.0" layoutY="141.0" mnemonicParsing="false" onAction="#BotaoCliente" prefHeight="36.0" prefWidth="92.0" text="Cliente" />
+      <Button fx:id="BotaoAssentos" layoutX="96.0" layoutY="200.0" mnemonicParsing="false" onAction="#BotaoAssentos" prefHeight="36.0" prefWidth="92.0" text="Assentos" />
+      <Button fx:id="BotaoMaquininha" layoutX="96.0" layoutY="269.0" mnemonicParsing="false" onAction="#BotaoMaquininha" prefHeight="30.0" prefWidth="92.0" text="Maquininha" />
       <Label layoutX="97.0" layoutY="45.0" prefHeight="31.0" prefWidth="126.0" text="Barbearia">
          <font>
             <Font name="Arial Black" size="21.0" />
@@ -23,5 +22,6 @@
             <Image url="@../../Imagens/BarbeariaGTA.png" />
          </image>
       </ImageView>
+      <Label fx:id="texto" layoutX="281.0" layoutY="52.0" prefHeight="47.0" prefWidth="295.0" />
    </children>
 </AnchorPane>
