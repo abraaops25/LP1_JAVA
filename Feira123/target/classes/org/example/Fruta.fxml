@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.Controller.FeiraController">
+   <children>
+      <Label layoutX="20.0" layoutY="20.0" text="🍎 Cadastrar Fruta">
+         <font><Font name="Arial Black" size="20.0"/></font>
+      </Label>
+
+      <Label layoutX="20.0" layoutY="75.0" text="Nome:"/>
+      <TextField fx:id="campoNomeFruta" layoutX="120.0" layoutY="70.0" prefWidth="250.0"/>
+
+      <Label layoutX="20.0" layoutY="115.0" text="Preço (R$):"/>
+      <TextField fx:id="campoPreco" layoutX="120.0" layoutY="110.0" prefWidth="250.0"/>
+
+      <Label layoutX="20.0" layoutY="155.0" text="Época:"/>
+      <TextField fx:id="campoEpoca" layoutX="120.0" layoutY="150.0" prefWidth="250.0"/>
+
+      <Label layoutX="20.0" layoutY="195.0" text="Barraca:"/>
+      <ComboBox fx:id="campoBarracaDaFruta" layoutX="120.0" layoutY="190.0" prefWidth="250.0"/>
+
+      <Button layoutX="120.0" layoutY="245.0" prefWidth="120.0" text="💾 Salvar"
+              onAction="#salvarFruta"/>
+      <Button layoutX="255.0" layoutY="245.0" prefWidth="120.0" text="🗑 Limpar"
+              onAction="#limparCamposFruta"/>
+
+      <Label fx:id="mensagemFruta" layoutX="120.0" layoutY="290.0" prefWidth="250.0"/>
+
+      <!-- Lista lateral -->
+      <Label layoutX="400.0" layoutY="20.0" text="Frutas cadastradas:">
+         <font><Font name="Arial Black" size="11.0"/></font>
+      </Label>
+      <ListView fx:id="listaGeral" layoutX="400.0" layoutY="45.0"
+                prefWidth="230.0" prefHeight="340.0"/>
+      <Button layoutX="400.0" layoutY="395.0" prefWidth="230.0" text="🔄 Atualizar Lista"
+              onAction="#verFrutas"/>
+
+      <!-- Navegação -->
+      <Button layoutX="20.0" layoutY="430.0" prefWidth="150.0" text="← Menu Principal"
+              onAction="#BotaoMenu"/>
+      <Button layoutX="180.0" layoutY="430.0" prefWidth="150.0" text="🏪 Ir para Barracas"
+              onAction="#BotaoBarraca"/>
+      <Button layoutX="340.0" layoutY="430.0" prefWidth="150.0" text="👤 Ir para Pessoas"
+              onAction="#BotaoPessoas"/>
+   </children>
+</AnchorPane>

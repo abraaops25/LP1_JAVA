@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.Controller.FeiraController">
+    <children>
+
+        <Label layoutX="20.0" layoutY="15.0" text="Sistema de Feira">
+            <font><Font name="Arial Black" size="22.0"/></font>
+        </Label>
+        <Label layoutX="20.0" layoutY="55.0" fx:id="labelFeiraNome" text="Nenhuma feira selecionada"/>
+
+        <!-- Cadastrar -->
+        <Label layoutX="20.0" layoutY="90.0" text="Cadastrar:">
+            <font><Font name="Arial Black" size="13.0"/></font>
+        </Label>
+        <Button layoutX="20.0"  layoutY="115.0" prefWidth="170.0" prefHeight="50.0" text="Nova Feira"    onAction="#BotaoNovaFeira"/>
+        <Button layoutX="20.0"  layoutY="175.0" prefWidth="170.0" prefHeight="50.0" text="Nova Barraca"  onAction="#BotaoBarraca"/>
+        <Button layoutX="20.0"  layoutY="235.0" prefWidth="170.0" prefHeight="50.0" text="Nova Fruta"    onAction="#BotaoFruta"/>
+        <Button layoutX="20.0"  layoutY="295.0" prefWidth="170.0" prefHeight="50.0" text="Nova Pessoa"   onAction="#BotaoPessoas"/>
+
+        <!-- Visualizar -->
+        <Label layoutX="210.0" layoutY="90.0" text="Visualizar:">
+            <font><Font name="Arial Black" size="13.0"/></font>
+        </Label>
+        <Button layoutX="210.0" layoutY="115.0" prefWidth="170.0" prefHeight="50.0" text="Ver Feiras"    onAction="#verFeiras"/>
+        <Button layoutX="210.0" layoutY="175.0" prefWidth="170.0" prefHeight="50.0" text="Ver Barracas"  onAction="#verBarracas"/>
+        <Button layoutX="210.0" layoutY="235.0" prefWidth="170.0" prefHeight="50.0" text="Ver Frutas"    onAction="#verFrutas"/>
+        <Button layoutX="210.0" layoutY="295.0" prefWidth="170.0" prefHeight="50.0" text="Ver Pessoas"   onAction="#verPessoas"/>
+
+        <!-- Lista lateral -->
+        <Label layoutX="400.0" layoutY="90.0" fx:id="labelLista" text="Selecione uma opcao">
+            <font><Font name="Arial Black" size="11.0"/></font>
+        </Label>
+        <ListView fx:id="listaGeral" layoutX="400.0" layoutY="115.0" prefWidth="260.0" prefHeight="235.0"/>
+
+        <!-- Totais -->
+        <Label layoutX="20.0"  layoutY="360.0" text="Totais:" >
+            <font><Font name="Arial Black" size="13.0"/></font>
+        </Label>
+        <Label layoutX="20.0"  layoutY="385.0" fx:id="lblTotalFeiras"   text="Feiras: 0"/>
+        <Label layoutX="140.0" layoutY="385.0" fx:id="lblTotalBarracas" text="Barracas: 0"/>
+        <Label layoutX="280.0" layoutY="385.0" fx:id="lblTotalFrutas"   text="Frutas: 0"/>
+        <Label layoutX="400.0" layoutY="385.0" fx:id="lblTotalPessoas"  text="Pessoas: 0"/>
+
+        <Button layoutX="20.0" layoutY="420.0" prefWidth="170.0" text="Atualizar Totais" onAction="#atualizarResumo"/>
+
+        <Separator layoutX="20.0" layoutY="460.0" prefWidth="640.0"/>
+
+        <Button layoutX="20.0" layoutY="475.0" prefWidth="640.0" prefHeight="40.0"
+                text="Ver Todos os Cadastros" onAction="#verTodos"/>
+
+    </children>
+</AnchorPane>
