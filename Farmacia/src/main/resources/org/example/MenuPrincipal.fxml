@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.Controller.FarmaciaController">
+    <children>
+
+        <Label layoutX="20.0" layoutY="15.0" text="Sistema de Farmácia">
+            <font><Font name="Arial Black" size="22.0"/></font>
+        </Label>
+        <Label layoutX="20.0" layoutY="55.0" fx:id="labelFarmaciaNome" text="Nenhuma farmácia selecionada"/>
+
+        <!-- Cadastrar -->
+        <Label layoutX="20.0" layoutY="90.0" text="Cadastrar:">
+            <font><Font name="Arial Black" size="13.0"/></font>
+        </Label>
+        <Button layoutX="20.0"  layoutY="115.0" prefWidth="170.0" prefHeight="50.0" text="Nova Farmácia"    onAction="#BotaoNovaFarmacia"/>
+        <Button layoutX="20.0"  layoutY="175.0" prefWidth="170.0" prefHeight="50.0" text="Nova Prateleira"  onAction="#BotaoPrateleira"/>
+        <Button layoutX="20.0"  layoutY="235.0" prefWidth="170.0" prefHeight="50.0" text="Novo Remédio"     onAction="#BotaoRemedio"/>
+        <Button layoutX="20.0"  layoutY="295.0" prefWidth="170.0" prefHeight="50.0" text="Novo Cliente"     onAction="#BotaoCliente"/>
+
+        <!-- Visualizar -->
+        <Label layoutX="210.0" layoutY="90.0" text="Visualizar:">
+            <font><Font name="Arial Black" size="13.0"/></font>
+        </Label>
+        <Button layoutX="210.0" layoutY="115.0" prefWidth="170.0" prefHeight="50.0" text="Ver Farmácias"    onAction="#verFarmacias"/>
+        <Button layoutX="210.0" layoutY="175.0" prefWidth="170.0" prefHeight="50.0" text="Ver Prateleiras"  onAction="#verPrateleiras"/>
+        <Button layoutX="210.0" layoutY="235.0" prefWidth="170.0" prefHeight="50.0" text="Ver Remédios"     onAction="#verRemedios"/>
+        <Button layoutX="210.0" layoutY="295.0" prefWidth="170.0" prefHeight="50.0" text="Ver Clientes"     onAction="#verClientes"/>
+
+        <!-- Lista lateral -->
+        <Label layoutX="400.0" layoutY="90.0" fx:id="labelLista" text="Selecione uma opção">
+            <font><Font name="Arial Black" size="11.0"/></font>
+        </Label>
+        <ListView fx:id="listaGeral" layoutX="400.0" layoutY="115.0" prefWidth="260.0" prefHeight="235.0"/>
+
+        <!-- Totais -->
+        <Label layoutX="20.0"  layoutY="360.0" text="Totais:">
+            <font><Font name="Arial Black" size="13.0"/></font>
+        </Label>
+        <Label layoutX="20.0"  layoutY="385.0" fx:id="lblTotalFarmacias"   text="Farmácias: 0"/>
+        <Label layoutX="160.0" layoutY="385.0" fx:id="lblTotalPrateleiras" text="Prateleiras: 0"/>
+        <Label layoutX="310.0" layoutY="385.0" fx:id="lblTotalRemedios"    text="Remédios: 0"/>
+        <Label layoutX="440.0" layoutY="385.0" fx:id="lblTotalClientes"    text="Clientes: 0"/>
+
+        <Button layoutX="20.0" layoutY="420.0" prefWidth="170.0" text="Atualizar Totais" onAction="#atualizarResumo"/>
+
+        <Separator layoutX="20.0" layoutY="460.0" prefWidth="640.0"/>
+
+        <Button layoutX="20.0" layoutY="475.0" prefWidth="640.0" prefHeight="40.0"
+                text="Ver Todos os Cadastros" onAction="#verTodos"/>
+
+    </children>
+</AnchorPane>
