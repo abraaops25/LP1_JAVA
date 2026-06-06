@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="560.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.BarbeariaController">
+    <children>
+        <Label layoutX="20.0" layoutY="15.0" text="Todos os Cadastros"><font><Font name="Arial Black" size="20.0"/></font></Label>
+        <Label layoutX="20.0"  layoutY="55.0"  text="👤 Clientes:"><font><Font name="Arial Black" size="11.0"/></font></Label>
+        <ListView fx:id="listaTodosClientes"     layoutX="20.0"  layoutY="75.0"  prefWidth="310.0" prefHeight="100.0"/>
+        <Label layoutX="360.0" layoutY="55.0"  text="✂️ Funcionários:"><font><Font name="Arial Black" size="11.0"/></font></Label>
+        <ListView fx:id="listaTodosFuncionarios" layoutX="360.0" layoutY="75.0"  prefWidth="310.0" prefHeight="100.0"/>
+        <Label layoutX="20.0"  layoutY="195.0" text="🛠️ Serviços:"><font><Font name="Arial Black" size="11.0"/></font></Label>
+        <ListView fx:id="listaTodosServicos"     layoutX="20.0"  layoutY="215.0" prefWidth="310.0" prefHeight="100.0"/>
+        <Label layoutX="360.0" layoutY="195.0" text="📅 Agendamentos:"><font><Font name="Arial Black" size="11.0"/></font></Label>
+        <ListView fx:id="listaTodosAgendamentos" layoutX="360.0" layoutY="215.0" prefWidth="310.0" prefHeight="100.0"/>
+        <Button layoutX="20.0" layoutY="335.0" prefWidth="650.0" text="Atualizar Tudo" onAction="#carregarTodos"/>
+        <Separator layoutX="20.0" layoutY="375.0" prefWidth="650.0"/>
+        <Button layoutX="20.0" layoutY="390.0" prefWidth="650.0" prefHeight="40.0" text="Voltar ao Menu" onAction="#BotaoMenu"/>
+    </children>
+</AnchorPane>

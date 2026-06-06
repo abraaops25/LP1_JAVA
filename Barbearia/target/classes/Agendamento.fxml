@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="520.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.BarbeariaController">
+    <children>
+        <Label layoutX="20.0" layoutY="20.0" text="Novo Agendamento"><font><Font name="Arial Black" size="20.0"/></font></Label>
+        <Label layoutX="20.0" layoutY="75.0" text="Cliente:"/>
+        <ComboBox fx:id="campoClienteAgend" layoutX="160.0" layoutY="70.0" prefWidth="250.0"/>
+        <Label layoutX="20.0" layoutY="115.0" text="Funcionário:"/>
+        <ComboBox fx:id="campoFuncionarioAgend" layoutX="160.0" layoutY="110.0" prefWidth="250.0"/>
+        <Label layoutX="20.0" layoutY="155.0" text="Serviço:"/>
+        <ComboBox fx:id="campoServicoAgend" layoutX="160.0" layoutY="150.0" prefWidth="250.0"/>
+        <Label layoutX="20.0" layoutY="195.0" text="Data/Hora:"/>
+        <TextField fx:id="campoDataHora" layoutX="160.0" layoutY="190.0" prefWidth="250.0" promptText="2026-06-10 14:00"/>
+        <Label layoutX="20.0" layoutY="235.0" text="Status:"/>
+        <ComboBox fx:id="campoStatus" layoutX="160.0" layoutY="230.0" prefWidth="250.0"/>
+        <Button layoutX="160.0" layoutY="280.0" prefWidth="120.0" text="Salvar" onAction="#salvarAgendamento"/>
+        <Button layoutX="295.0" layoutY="280.0" prefWidth="120.0" text="Limpar" onAction="#limparCamposAgendamento"/>
+        <Label fx:id="mensagemAgendamento" layoutX="160.0" layoutY="325.0" prefWidth="300.0"/>
+        <Label layoutX="430.0" layoutY="20.0" text="Agendamentos:"><font><Font name="Arial Black" size="11.0"/></font></Label>
+        <ListView fx:id="listaGeral" layoutX="430.0" layoutY="40.0" prefWidth="200.0" prefHeight="390.0"/>
+        <Button layoutX="430.0" layoutY="440.0" prefWidth="200.0" text="Atualizar" onAction="#verAgendamentos"/>
+        <Button layoutX="20.0" layoutY="470.0" prefWidth="130.0" text="Menu" onAction="#BotaoMenu"/>
+        <Button layoutX="160.0" layoutY="470.0" prefWidth="130.0" text="Clientes" onAction="#BotaoCliente"/>
+        <Button layoutX="300.0" layoutY="470.0" prefWidth="120.0" text="Serviços" onAction="#BotaoServico"/>
+    </children>
+</AnchorPane>

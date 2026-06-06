@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="550.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.BarbeariaController">
+    <children>
+        <Label layoutX="20.0" layoutY="15.0" text="Sistema de Barbearia"><font><Font name="Arial Black" size="22.0"/></font></Label>
+        <Label layoutX="20.0" layoutY="90.0" text="Cadastrar:"><font><Font name="Arial Black" size="13.0"/></font></Label>
+        <Button layoutX="20.0"  layoutY="115.0" prefWidth="170.0" prefHeight="50.0" text="Novo Cliente"     onAction="#BotaoCliente"/>
+        <Button layoutX="20.0"  layoutY="175.0" prefWidth="170.0" prefHeight="50.0" text="Novo Funcionário" onAction="#BotaoFuncionario"/>
+        <Button layoutX="20.0"  layoutY="235.0" prefWidth="170.0" prefHeight="50.0" text="Novo Serviço"     onAction="#BotaoServico"/>
+        <Button layoutX="20.0"  layoutY="295.0" prefWidth="170.0" prefHeight="50.0" text="Novo Agendamento" onAction="#BotaoAgendamento"/>
+        <Label layoutX="210.0" layoutY="90.0" text="Visualizar:"><font><Font name="Arial Black" size="13.0"/></font></Label>
+        <Button layoutX="210.0" layoutY="115.0" prefWidth="170.0" prefHeight="50.0" text="Ver Clientes"     onAction="#verClientes"/>
+        <Button layoutX="210.0" layoutY="175.0" prefWidth="170.0" prefHeight="50.0" text="Ver Funcionários" onAction="#verFuncionarios"/>
+        <Button layoutX="210.0" layoutY="235.0" prefWidth="170.0" prefHeight="50.0" text="Ver Serviços"     onAction="#verServicos"/>
+        <Button layoutX="210.0" layoutY="295.0" prefWidth="170.0" prefHeight="50.0" text="Ver Agendamentos" onAction="#verAgendamentos"/>
+        <Label layoutX="400.0" layoutY="90.0" fx:id="labelLista" text="Selecione uma opção"><font><Font name="Arial Black" size="11.0"/></font></Label>
+        <ListView fx:id="listaGeral" layoutX="400.0" layoutY="115.0" prefWidth="260.0" prefHeight="235.0"/>
+        <Label layoutX="20.0"  layoutY="365.0" text="Totais:"><font><Font name="Arial Black" size="13.0"/></font></Label>
+        <Label layoutX="20.0"  layoutY="390.0" fx:id="lblTotalClientes"     text="Clientes: 0"/>
+        <Label layoutX="170.0" layoutY="390.0" fx:id="lblTotalFuncionarios" text="Funcionários: 0"/>
+        <Label layoutX="340.0" layoutY="390.0" fx:id="lblTotalServicos"     text="Serviços: 0"/>
+        <Label layoutX="470.0" layoutY="390.0" fx:id="lblTotalAgendamentos" text="Agendamentos: 0"/>
+        <Button layoutX="20.0" layoutY="420.0" prefWidth="170.0" text="Atualizar Totais" onAction="#atualizarResumo"/>
+        <Separator layoutX="20.0" layoutY="460.0" prefWidth="640.0"/>
+        <Button layoutX="20.0" layoutY="475.0" prefWidth="640.0" prefHeight="40.0" text="Ver Todos os Cadastros" onAction="#verTodos"/>
+    </children>
+</AnchorPane>
